@@ -1,24 +1,10 @@
 <html>
-<head>
-        <title>Read Text File</title>
-        <script src="jquery-1.10.1.js"></script>
-        <script>
-                //get the text file
-                $.get("dati.txt", function(data) {
-                        //split the string into an array
-                        var info = data.split(',');
-                        //set the html of each span with info from the array
-                        $('#manager').html(info[0]);
-                        $('#phone').html(info[1]);
-                        $('#assistant').html(info[2]);
-                });
-        </script>
-</head>
-
-<body>
-<p>Manager Name: <span id="manager"></span></p>
-<p>Manager Phone Number: <span id="phone"></span></p>
-<p>Assistant: <span id="assistant"></span></p>
-
-</body>
+<script>
+var client = new XMLHttpRequest();
+client.open('GET', '/foo.txt');
+client.onreadystatechange = function() {
+  alert(client.responseText);
+}
+client.send();
+</script>
 </html>
