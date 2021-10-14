@@ -1,20 +1,15 @@
 <html>
-<head>
-<script src="jquery.min.js"></script>
-
-<script>
-$(document).ready(function(){
-  $.ajax({
-    url: "https://xericon.github.io/dati.txt"
-  }).done(function(response) {
-    $('#data').html(response);
-  });
-});
-</script>
-</head>
 <body>
 
+<h2>Percentuale Vittoria = </h2> 
+<p id="PV">0</p>
 
-<div id="data"></p>
+<h2>Quota media vincita = </h2>
+<p id="QMV">0</p>
+
+<h2>Attivo/Passivo = </h2>
+<p id="AP">0</p>
+
+
 </body>
 </html>
