@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>49176C6E-72BC-40C6-BB3F-CE5335A9ABE9</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>49176C6E-72BC-40C6-BB3F-CE5335A9ABE9</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va/ACAAAAAAQQMAAAABWsPbAl77cuIJhHtTi/dokC
+				PNbCwPvQ01vQlkYEZvqY7AEAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAMAAAAAQEAAGZhYmlvbWFzc2lt
+				bwkAAAABAQAARG9jdW1lbnRzAAAABgAAAAEBAABHaXRI
+				dWIAABEAAAABAQAAeGVyaWNvbi5naXRodWIuaW8AAAAU
+				AAAAAQYAABAAAAAgAAAANAAAAEgAAABYAAAACAAAAAQD
+				AACkVQAAAAAAAAgAAAAEAwAAzHUAAAAAAAAIAAAABAMA
+				AP11AAAAAAAACAAAAAQDAAAZYK8AAAAAAAgAAAAEAwAA
+				GmCvAAAAAAAUAAAAAQYAAJAAAACgAAAAsAAAAMAAAADQ
+				AAAACAAAAAAEAABBw4w2O0uhFBgAAAABAgAAAgAAAAAA
+				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAADAAAAAAAA
+				AAQAAAADAwAA9QEAAAgAAAABCQAAZmlsZTovLy8JAAAA
+				AQEAAE1hY2ludG9zaAAAAAgAAAAEAwAAAJAgaHQAAAAI
+				AAAAAAQAAEHB3kSAAAAAJAAAAAEBAABBMzkwOTVFMS04
+				QzQxLTQyMkUtOUFBNi05MDIzNDY1MzlERTEYAAAAAQIA
+				AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
+				LwAAAAAAAAABBQAAzAAAAP7///8BAAAAAAAAABAAAAAE
+				EAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAA
+				AABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEA
+				AAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAA
+				bAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAw
+				IAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAIAAAAAAA
+				AAASwAAAPAEAAAAAAAAQ0AAABAAAAAAAAAA=
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/fabiomassimo/Documents/GitHub/xericon.github.io/</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>xericon.github.io</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>
