@@ -1,9 +1,20 @@
 <html>
+<head>
+<script src="jquery.min.js"></script>
+
 <script>
-fetch('https://xericon.github.io/dati.txt')
-  .then(response => response.text())
-  .then((data) => {
-    console.log(data)
-  })
+$(document).ready(function(){
+  $.ajax({
+    url: "https://xericon.github.io/dati.txt"
+  }).done(function(response) {
+    $('#data').html(response);
+  });
+});
 </script>
+</head>
+<body>
+
+
+<div id="data"></p>
+</body>
 </html>
