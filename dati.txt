@@ -1,1 +1,1 @@
-ora funziona più velocemente
+100 20 30 50 44 1245
