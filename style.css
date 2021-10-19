@@ -17,7 +17,7 @@ nav{
 	padding: 1% 2%;
 	justify-content: space-between;
 	align-items: center;
-	background: #6cf;
+	background: linear-gradient(to right, #6cf, #00FF00);
 
 }
 nav img{
@@ -88,7 +88,7 @@ nav img{
 }
 
 .grid-item:hover{
-	background-color: #6cf;
+	background-color: #B0E0E6;
 	transition: 1.5s;
 }
 
@@ -127,8 +127,8 @@ nav img{
 	position: bottom;
 	bottom: 0;
 	width: 100%;
-	height: 2.5rem;/* Height of the footer */
-	background:#6cf;
+	height: 2.8rem;/* Height of the footer */
+	background: linear-gradient(to right, #6cf, #00FF00);
 	text-align: center;
    
 }
