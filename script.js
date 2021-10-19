@@ -5,10 +5,13 @@ var x = ["V","F","V","F","V","F","V","V","V","F"];
 //array per grafico y 
 var y = [86,114,106,106,107,111,133,221,783,2478];
 
+
+//dati salvati
 var pos = [];
 var neg = [];
 
-async function dataFetch(){
+async function main(){
+	//prendere dati da file txt
 	let data = await fetch(fileUrl)
     	.then((response) => response.text())
     	.then(data => {
@@ -17,43 +20,80 @@ async function dataFetch(){
     	.catch(error => {
         	console.error(error);
     	});
-
 	var fields = data.split(' ');
-
+	
+	//inserire dati in array ordinati
 	for(let i = 0; i < fields.length; i++){
 		var a = fields[i];
 	
 		if(a.slice(-1)=="V"){
-			pos.push(a.slice(0, -1))
+			pos.push(a.slice(0, -1));
 		} else {
-			neg.push(a.slice(0, -1))
+			neg.push(a.slice(0, -1));
 		}
 	}
-	console.log(pos)
-	console.log(neg)
 	
-	//calcolo percentuale vittoria
-	var PV = pos.length/(pos.length+neg.length)*100;
-	PV = Math.round(PV)
-	console.log("PercentualeVittoria= "+PV+"%");
-	document.getElementById("PV").innerHTML = PV;
+	//log array
+	console.log("-".repeat(50));
+	console.log("check-pos= "+pos);
+	console.log("check-neg= "+neg);
 	
-	//calcolo quota media
-	var pos2 = pos.map((i) => Number(i));
-	for (b = 0; b < pos2.length; b++) {   
-		//console.log(pos2[b])
 	
-   		var sumPos = sumPos + pos2[b];  
-    
-    	//console.log(sumPos);
-    }
-	console.log("Somma positivi= "+ sumPos)
-	console.log("QuotaMedia= "+PV);
-	//document.getElementById("QM").innerHTML = QM;
+	//calcolo percentuale vittoria:
+	function perVit(){
+		var PV = pos.length/(pos.length+neg.length)*100;
+		return Math.round(PV);
+	}
+	
+	//calcolo quota media:
+	function quotaMedia(){
+		function add(accumulator, a) {
+    		return accumulator + a;
+		}
+		const sumPos = pos.map((i) => Number(i)).reduce(add,0);
+		return sumPos/pos.length;
+	}
+	
+	//calcolo attivo passivo
+	function attPass(){
+		const bgt = 50;
+		tot = 0;
+		for(i=0; i < pos.length; i++){
+			tot = tot + (bgt/pos[i]);
+		}
+		for(i=0; i < neg.length; i++){
+			tot = tot + (bgt/neg[i]);
+		}
+
+		var ap = bgt*pos.length-tot
+		return ap.toString().substr(0, ap.toString().length - 12)+"$";
+	}
+	
+	function log(){
+		console.log("-".repeat(50));
+		console.log("PercentualeVittoria= "+perVit()+"%");
+		console.log("QuotaMedia= "+quotaMedia());
+		console.log("Attivo/Passivo= "+attPass());
+		console.log("-".repeat(50));
+		
+		//console.log(attPass())
+				
+		//document.getElementById("QM").innerHTML = QM;
+		document.getElementById("PV").innerHTML = perVit()+"%";
+		document.getElementById("QM").innerHTML = quotaMedia();
+		document.getElementById("AP").innerHTML = attPass();
+	}
+	
+	log();
+	
 }
+main();
 
-
-
+function add_img() { 
+	var img = document.createElement('img'); 
+    img.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png'; 
+	document.getElementById('body').appendChild(img);
+}
 
 function graph(xx, yy, id, nome){
 	var ctx = document.getElementById(id);
@@ -73,22 +113,8 @@ function graph(xx, yy, id, nome){
 	});
 }
 
-function main(){
-	dataFetch();
-	graph(x, y, "grafico", "Pengwin");
-}
+graph(x, y, "grafico", "penguin");
 
-main();
-
-
-
-//console.log(fields);
-
-
-//console.log(num.slice(-1));
-//console.log(num.slice(0, -1));
-
-//console.log(fields.length);
 
 
 
