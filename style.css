@@ -89,7 +89,7 @@ nav img{
 .grid2-item{
 	display: grid;
 	grid-template-columns: 2fr;
-	text-align: left;
+	text-align: right;
 	padding: 10px;
 
 }
@@ -97,8 +97,7 @@ nav img{
 .grid2-item img{
 	margin-left: auto;
 	margin-right: auto;
-	width: 40%;
-	height 10%;
+	width: 30%;
 }
 .grid2-item a{
 	font-family: 'Bungee Inline', cursive;
