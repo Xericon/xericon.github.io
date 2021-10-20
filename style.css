@@ -2,13 +2,15 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
+
 }
 
 .header{
+	position: sticky;
+	top:0;
 	min-height: 100px;
 	width: 100%;
-	position: relative;
-	animation: slideInFromTop 1.5s ease-in;
+	animation: slideInFromLeft 1s ease-in;
 	
 }
 
@@ -18,11 +20,9 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	background: linear-gradient(to right, #6cf, #00FF00);
-
 }
 nav img{
 	width: 150px;
-	height: 200;
 
 }
 .nav-links{
@@ -57,21 +57,21 @@ nav img{
 
 .grid-container {
 	height: 100%;
-	overflow-y: auto;
+	widht: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
-/*  grid-template-columns: auto auto auto;*/
-  /*background-color: #2196F3;*/
-	margin: 20px;
+	margin: 0;
 	padding: 10px;
+		animation: slideInFromTop 1s ease-in;
+  
+
 }
 .grid-item {
-
-	
 	display: grid;
 	grid-template-columns: 2fr;
 	grid-auto-flow: column;
-	max-height: 100%;
+	width: 90%;
+	
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 3px solid;
 	border-style: outset;
@@ -80,11 +80,12 @@ nav img{
 	margin: 15px;
 	border-radius: 15px 50px;
 	padding: 20px;
+	
 	font-size: 30px;
 	font-family: 'Bungee Inline', cursive;
 	text-align: center;
-	animation: slideInFromRight 1.5s ease-in;
-  
+	
+
 }
 
 .grid-item:hover{
@@ -124,13 +125,14 @@ nav img{
 
 
 #footer {
-	position: bottom;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 2.8rem;/* Height of the footer */
+	height: 2.5rem;/* Height of the footer */
 	background: linear-gradient(to right, #6cf, #00FF00);
 	text-align: center;
-   
+    animation: slideInFromRight 1s ease-in;
+	
 }
 
 
