@@ -131,6 +131,7 @@ nav img{
 	height: 2.5rem;/* Height of the footer */
 	background: linear-gradient(to right, #6cf, #00FF00);
 	text-align: center;
+	font-size: 20px;
     animation: slideInFromRight 1s ease-in;
 	
 }
