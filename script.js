@@ -109,6 +109,8 @@ function graph(xx, yy, id, nome){
 	});
 }
 
+
+
 window.onload = function() {
 new Chart(document.getElementById("grafico"), {
   type: 'line',
