@@ -57,12 +57,11 @@ nav img{
 
 .grid-container {
 	height: 100%;
-	widht: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
 	margin: 0;
-	padding: 10px;
-		animation: slideInFromTop 1s ease-in;
+	padding: 30px;
+	animation: slideInFromBottom 1s ease-in;
   
 
 }
@@ -70,16 +69,15 @@ nav img{
 	display: grid;
 	grid-template-columns: 2fr;
 	grid-auto-flow: column;
-	width: 90%;
 	
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 3px solid;
 	border-style: outset;
 	box-shadow: 0 0 0 0.35rem skyblue;
 	border-color: blue;
-	margin: 15px;
+	margin: 20px;
 	border-radius: 15px 50px;
-	padding: 20px;
+	padding: 30px;
 	
 	font-size: 30px;
 	font-family: 'Bungee Inline', cursive;
@@ -90,7 +88,7 @@ nav img{
 
 .grid-item:hover{
 	background-color: #B0E0E6;
-	transition: 1.5s;
+	transition: 1s;
 }
 
 .grid2-item{
