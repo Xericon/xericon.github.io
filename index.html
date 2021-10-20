@@ -5,15 +5,19 @@
 	
 	<link rel="icon" type="image/png" href="img/t.png">
 	
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/hamburger.css">
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	
 	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+	
+	<script src="js/main.js"></script>
 </head> 
 <body>
 	<section class="header">
@@ -21,24 +25,15 @@
 			<a href="index.html"><img src="img/t.png"></a>
     		<ul class="menu desktop">
       			<li><a href="" class="menu__item">Listings</a></li>
- 				<li><a href="" class="menu__item">About us</a></li>
- 				<li><a href="" class="menu__item">Contact us</a></li>
-    			</ul>
+       			<li><a href="" class="menu__item">About us</a></li>
+    			<li><a href="" class="menu__item">Contact us</a></li>
+			</ul>
     		<a class="menu__icon mobile"><span></span></a>
     		<ul class="menu mobile">
      			<li><a href="" class="menu__item">Home</a></li>
      			<li><a href="" class="menu__item">About us</a></li>
-     			 <li><a href="" class="menu__item">Contact us</a></li>
+     			<li><a href="" class="menu__item">Contact us</a></li>
   			</ul>
-<!-- 
-			<a href="index.html"><img src="img/t.png"></a>
-			<div class="nav-links">
-				<ul>
-					<li><a href="">HOME</a></li>
-					<li><a href="">CONTACTS</a></li>
-				</ul>
-			</div>
- -->
 		</nav>
 	</section>
 
@@ -63,11 +58,28 @@
  			</div>
  			
  		</div>
-  		<div class="grid-item">2</div>
+  		<div class="grid-item">
+  		 	<div class= "grid2-item">
+				<h2>BoomBet</h2>
+ 				<img src="img/boombet.png">
+ 			</div>
+ 				
+ 			<div class="grid2-item">
+ 				<a>Percentuale Vittoria</a>
+ 				<a>Attivo/Passivo</a>
+ 				<a>Quota Media</a>
+ 			</div>
+				
+ 			<div class="grid2-item">
+ 				<h3 id="PV2"></h3>
+ 				<h3 id="AP2"></h3>
+ 				<h3 id="QM2"></h3>
+ 			</div>
+ 		</div>
   		<div class="grid-item">3</div>  
   		<div class="grid-item"><canvas id="grafico"></canvas></div> 
 	</div>
-
+	
 	<footer id="footer">Contattaci a info@tipstats.it</footer>
 </body> 
 </html>

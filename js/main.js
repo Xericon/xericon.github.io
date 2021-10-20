@@ -1,14 +1,17 @@
 //dati da esporre
 const fileUrl = 'https://raw.githubusercontent.com/Xericon/xericon.github.io/main/dati.txt'
-//array per grafico x 
-var x = ["V","F","V","F","V","F","V","V","V","F"];
-//array per grafico y 
-var y = [86,114,106,106,107,111,133,221,783,2478];
-
 
 //dati salvati
 var pos = [];
 var neg = [];
+
+
+
+$(document).ready(function() {
+  $('.menu__icon').click(function(){
+    $('body').toggleClass('menu_shown');
+  });
+});
 
 
 async function main(){
@@ -83,40 +86,16 @@ async function main(){
 		document.getElementById("PV").innerHTML = perVit()+"%";
 		document.getElementById("QM").innerHTML = quotaMedia();
 		document.getElementById("AP").innerHTML = attPass();
+		
+		document.getElementById("PV2").innerHTML = perVit()+"%";
+		document.getElementById("QM2").innerHTML = quotaMedia();
+		document.getElementById("AP2").innerHTML = attPass();
 	}
 	
 	log();
 	
 }
 main();
-//graph(x, y, "grafico", "penguin");
-
-function graph(xx, yy, id, nome){
-	var ctx = document.getElementById(id);
-	var myChart = new Chart(ctx, {
-	  type: 'line',
-	  data: {
-	    labels: xx,
-	    datasets: [
-	      { 
-	        data: yy, 
-	        label: nome,
-	        borderColor: "#3e95cd",
-	        fill: false
-	      }
-	    ]
-	  }
-	});
-}
-
-
-$(document).ready(function() {
-  $('.menu__icon').click(function(){
-    $('body').toggleClass('menu_shown');
-  });
-});
-
-
 
 window.onload = function() {
 new Chart(document.getElementById("grafico"), {
@@ -126,47 +105,21 @@ new Chart(document.getElementById("grafico"), {
     datasets: [{ 
         data: [86,114,106,106,107,111,133,221,783,2478],
         label: "Pengwin",
-        borderColor: "#3e95cd",
-        fill: false
+        borderColor: "#00FF00",
+        fill: true
       }, { 
         data: [282,350,411,502,635,809,947,1402,3700,5267],
-        label: "Tizi01",
-        borderColor: "#8e5ea2",
-        fill: false
-      }, { 
-        data: [168,170,178,190,203,276,408,547,675,734],
-        label: "Tizi02",
-        borderColor: "#3cba9f",
-        fill: false
-      }, { 
-        data: [40,20,10,16,24,38,74,167,508,784],
-        label: "Tizi03",
-        borderColor: "#e8c3b9",
-        fill: false
-      }, { 
-        data: [6,3,2,2,7,26,82,172,312,433],
-        label: "Tizi04",
-        borderColor: "#c45850",
-        fill: false
+        label: "BoomBet",
+        borderColor: "#dc143c",
+        fill: true
       }
     ]
   },
   options: {
     title: {
-      display: true,
+      display: false,
       text: 'Statistiche Comparate:'
     }
   }
 });
 }
-
-// function prova1(){
-// 	let dat =  fetch(fileUrl)
-//     .then((response) => response.text())
-//     .then(data => {
-//         return data;
-//     });
-//     var stringArray = data.split(/(\s+)/);
-// 	console.log(data)
-// 	document.getElementById("PV").innerHTML = stringArray[8]
-// }
