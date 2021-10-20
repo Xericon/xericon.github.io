@@ -110,6 +110,13 @@ function graph(xx, yy, id, nome){
 }
 
 
+$(document).ready(function() {
+  $('.menu__icon').click(function(){
+    $('body').toggleClass('menu_shown');
+  });
+});
+
+
 
 window.onload = function() {
 new Chart(document.getElementById("grafico"), {
