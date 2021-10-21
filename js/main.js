@@ -116,6 +116,11 @@ new Chart(document.getElementById("grafico"), {
         label: "BoomBet",
         borderColor: "#dc143c",
         fill: true
+      }, { 
+         data: [100,350,411,502,635,80,947,1402,2500,4400],
+        label: "Sbanca",
+        borderColor: "#00ffff",
+        fill: true
       }
     ]
   },
