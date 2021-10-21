@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.header{
+	position: sticky;
+	top:0;
+	min-height: 100px;
+	width: 100%;
+	animation: slideInFromTop 1s ease-in;
+	
+}
+
+nav{
+	display: flex;
+	padding: 1% 2%;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(to right, #6cf, #d92626);
+}
+nav img{
+	width: 150px;
+
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative
+}
+.nav-links ul li a{
+	color: #111;
+	text-decoration: none;
+	font-size: 25px;
+	
+}
+.nav-links ul li a::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li a:hover:after{
+	width: 100%;
+}
+
+.grid-container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	padding: 30px;
+	animation: slideInFromLeft 1s ease-in;
+  
+
+}
+.grid-item {
+	display: grid;
+	grid-template-columns: 2fr;
+	grid-auto-flow: column;
+	
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 3px solid;
+	border-style: outset;
+	box-shadow: 0 0 0 0.35rem skyblue;
+	border-color: blue;
+	margin: 20px;
+	border-radius: 15px 50px;
+	padding: 30px;
+	
+	font-size: 30px;
+	font-family: 'Bungee Inline', cursive;
+	text-align: center;
+	
+
+}
+
+.grid-item:hover{
+	background-color: #B0E0E6;
+	transition: 0.5s;
+}
+
+.grid2-item{
+	display: grid;
+	grid-template-columns: 2fr;
+	text-align: right;
+	padding: 10px;
+
+}
+
+.grid2-item img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+.grid2-item a{
+	width: 100%;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 20px
+}
+.grid2-item h2{
+	font-family: 'Bungee Inline', cursive;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 25px;
+}
+.grid2-item h3{
+	font-family: 'Bungee Inline', cursive;
+	font-size: 25px;
+	color: #ff0000  
+}
+
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;/* Height of the footer */
+	background: linear-gradient(to right, #6cf, #d92626);
+	text-align: center;
+	font-size: 20px;
+    animation: slideInFromBottom 1s ease-in;
+	
+}
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
