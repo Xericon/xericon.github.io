@@ -88,7 +88,7 @@ nav img{
 
 .grid-item:hover{
 	background-color: #B0E0E6;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 .grid2-item{
