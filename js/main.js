@@ -109,6 +109,7 @@ new Chart(document.getElementById("grafico"), {
     datasets: [{ 
         data: [86,114,106,106,107,111,133,221,783,2478],
         label: "Pengwin",
+
         borderColor: "#00FF00",
         fill: true
       }, { 
@@ -124,10 +125,13 @@ new Chart(document.getElementById("grafico"), {
       }
     ]
   },
+
   options: {
     title: {
-      display: false,
-      text: 'Statistiche Comparate:'
+      display: true,
+      text: 'Statistiche Comparate:',
+      fontSize: 20,
+		fontColor: "black"
     }
   }
 });
