@@ -90,6 +90,10 @@ async function main(){
 		document.getElementById("PV2").innerHTML = perVit()+"%";
 		document.getElementById("QM2").innerHTML = quotaMedia();
 		document.getElementById("AP2").innerHTML = attPass();
+		
+		document.getElementById("PV3").innerHTML = perVit()+"%";
+		document.getElementById("QM3").innerHTML = quotaMedia();
+		document.getElementById("AP3").innerHTML = attPass();
 	}
 	
 	log();
