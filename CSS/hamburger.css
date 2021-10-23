@@ -1,14 +1,8 @@
-
-
 $viewport_size: (
     s: 320px,
     m: 768px,
     l: 1200px
 );
-
-
-
-
 
 ul {
   list-style: none;

@@ -5,7 +5,7 @@ const fileUrl = 'https://raw.githubusercontent.com/Xericon/xericon.github.io/mai
 var pos = [];
 var neg = [];
 
-
+//hamburger
 
 $(document).ready(function() {
   $('.menu__icon').click(function(){
@@ -80,9 +80,7 @@ async function main(){
 		console.log("Attivo/Passivo= "+attPass());
 		console.log("-".repeat(50));
 		
-		//console.log(attPass())
-				
-		//document.getElementById("QM").innerHTML = QM;
+
 		document.getElementById("PV").innerHTML = perVit()+"%";
 		document.getElementById("QM").innerHTML = quotaMedia();
 		document.getElementById("AP").innerHTML = attPass();
@@ -100,6 +98,9 @@ async function main(){
 	
 }
 main();
+
+
+//grafico
 
 window.onload = function() {
 new Chart(document.getElementById("grafico"), {
