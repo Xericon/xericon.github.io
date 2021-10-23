@@ -22,7 +22,7 @@ nav{
 	background: linear-gradient(to right, #6cf, #00FF00);
 	border: 3px solid;
 	border-style: outset;
-	box-shadow: 0 0 0 0.35rem skyblue;
+	/* box-shadow: 0 0 0 0.35rem skyblue; */
 	border-color: blue;
 }
 nav img{
@@ -66,7 +66,9 @@ nav img{
 	margin: 0;
 	padding: 30px;
 	animation: slideInFromLeft 1s ease-in;
+/* 
 	background: linear-gradient(to right, white 0%,#6cf 30%,#00FF00 60%,white 100%);
+ */
 
   
 
