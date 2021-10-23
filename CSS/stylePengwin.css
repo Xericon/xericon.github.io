@@ -5,6 +5,11 @@
 
 }
 
+body{
+	background: linear-gradient(to right, white 0%,#6cf 45%,#bfff00 55%,white 100%);
+
+}
+
 .header{
 	position: sticky;
 	top:0;
