@@ -96,7 +96,7 @@ a{
   min-height: 100vh;
   text-align: center;
   padding-top: 112px;
-  background: #7eb4e2;
+  background: #00ffff;
   z-index: 10;
   transition: all .4s ease-in-out;
   transform: translateX(-100%);

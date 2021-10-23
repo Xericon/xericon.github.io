@@ -28,7 +28,7 @@ nav{
 	border: 3px solid;
 	border-style: outset;
 	/* box-shadow: 0 0 0 0.35rem skyblue; */
-	border-color: blue;
+	border-color: #0080ff;
 }
 nav img{
 	width: 150px;
@@ -86,8 +86,8 @@ nav img{
 	background-color: rgba(255, 255, 255, 0.8);
 	border: 3px solid;
 	border-style: outset;
-	box-shadow: 0 0 0 0.35rem skyblue;
-	border-color: blue;
+	box-shadow: 0 0 0 0.35rem #00ffff;
+	border-color: #0080ff;
 	margin: 20px;
 	border-radius: 15px 50px;
 	padding: 30px;
@@ -140,7 +140,7 @@ nav img{
 	border: 3px solid;
 	border-style: outset;
 	
-	border-color: blue;
+	border-color: #0080ff;
 
 	position: fixed;
 	bottom: 0;
