@@ -83,17 +83,17 @@ async function main(){
 		console.log("-".repeat(50));
 		
 
-// 		document.getElementById("PV").innerHTML = perVit()+"%";
-// 		document.getElementById("QM").innerHTML = quotaMedia();
-// 		document.getElementById("AP").innerHTML = attPass();
-// 		
-// 		document.getElementById("PV2").innerHTML = perVit()+"%";
-// 		document.getElementById("QM2").innerHTML = quotaMedia();
-// 		document.getElementById("AP2").innerHTML = attPass();
-// 		
-// 		document.getElementById("PV3").innerHTML = perVit()+"%";
-// 		document.getElementById("QM3").innerHTML = quotaMedia();
-// 		document.getElementById("AP3").innerHTML = attPass();
+		document.getElementById("PV").innerHTML = perVit()+"%";
+		document.getElementById("QM").innerHTML = quotaMedia();
+		document.getElementById("AP").innerHTML = attPass();
+		
+		document.getElementById("PV2").innerHTML = perVit()+"%";
+		document.getElementById("QM2").innerHTML = quotaMedia();
+		document.getElementById("AP2").innerHTML = attPass();
+		
+		document.getElementById("PV3").innerHTML = perVit()+"%";
+		document.getElementById("QM3").innerHTML = quotaMedia();
+		document.getElementById("AP3").innerHTML = attPass();
 	}
 	function lunghezzavar(){
 	  	var lung = [];
@@ -118,7 +118,7 @@ async function main(){
 		return rend;
 	}
 
-        $(function () {/*from   w ww .  ja va2 s  . c o  m*/
+        $(function () {
             var ctx = document.getElementById("grafico2").getContext('2d');
             var data = {
                 datasets: [{
@@ -128,6 +128,7 @@ async function main(){
                         '#f56954',
                         '#f39c12',
                     ],
+                    
                 }],
                 labels: [
                     'Vittorie',
@@ -155,7 +156,7 @@ async function main(){
     datasets: [{ 
         data: rendimento(),
         label: "Pengwin",
-
+		pointRadius: 10,
         borderColor: "#00FF00",
         fill: true
       }
