@@ -81,17 +81,17 @@ async function main(){
 		console.log("-".repeat(50));
 		
 
-		document.getElementById("PV").innerHTML = perVit()+"%";
-		document.getElementById("QM").innerHTML = quotaMedia();
-		document.getElementById("AP").innerHTML = attPass();
-		
-		document.getElementById("PV2").innerHTML = perVit()+"%";
-		document.getElementById("QM2").innerHTML = quotaMedia();
-		document.getElementById("AP2").innerHTML = attPass();
-		
-		document.getElementById("PV3").innerHTML = perVit()+"%";
-		document.getElementById("QM3").innerHTML = quotaMedia();
-		document.getElementById("AP3").innerHTML = attPass();
+// 		document.getElementById("PV").innerHTML = perVit()+"%";
+// 		document.getElementById("QM").innerHTML = quotaMedia();
+// 		document.getElementById("AP").innerHTML = attPass();
+// 		
+// 		document.getElementById("PV2").innerHTML = perVit()+"%";
+// 		document.getElementById("QM2").innerHTML = quotaMedia();
+// 		document.getElementById("AP2").innerHTML = attPass();
+// 		
+// 		document.getElementById("PV3").innerHTML = perVit()+"%";
+// 		document.getElementById("QM3").innerHTML = quotaMedia();
+// 		document.getElementById("AP3").innerHTML = attPass();
 	}
 	
 	log();
@@ -102,24 +102,27 @@ main();
 
 //grafico
 
+
+
+
 window.onload = function() {
 new Chart(document.getElementById("grafico"), {
   type: 'line',
   data: {
-    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+    labels: [0,1,2,3,4,5,6,7,8,9],
     datasets: [{ 
-        data: [86,114,106,106,107,111,133,221,783,2478],
+        data: [-50,11,19,16,10,11,33,21,73,28],
         label: "Pengwin",
 
         borderColor: "#00FF00",
         fill: true
       }, { 
-        data: [282,350,411,502,635,809,947,1402,3700,5267],
+        data: [12,90,9,42,43,65,97,4,5,10],
         label: "BoomBet",
         borderColor: "#dc143c",
         fill: true
       }, { 
-         data: [100,350,411,502,635,80,947,1402,2500,4400],
+         data: [11,35,41,52,65,8,97,16,60,40],
         label: "Sbanca",
         borderColor: "#00ffff",
         fill: true
@@ -137,3 +140,68 @@ new Chart(document.getElementById("grafico"), {
   }
 });
 }
+
+        $(function () {/*from   w ww .  ja va2 s  . c o  m*/
+            var ctx = document.getElementById("grafico2").getContext('2d');
+            var data = {
+                datasets: [{
+                    data: [10, 20, 30],
+                    backgroundColor: [
+                        '#3c8dbc',
+                        '#f56954',
+                        '#f39c12',
+                    ],
+                }],
+                labels: [
+                    'Request',
+                    'Layanan',
+                    'Problem'
+                ]
+            };
+            var myDoughnutChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            boxWidth: 12
+                        }
+                    }
+                }
+            });
+            var ctx_2 = document.getElementById("layanan_subbagian").getContext('2d');
+            var data_2 = {
+                datasets: [{
+                    data: [10, 20, 30],
+                    backgroundColor: [
+                        '#3c8dbc',
+                        '#f56954',
+                        '#f39c12',
+                    ],
+                }],
+                labels: [
+                    'Request',
+                    'Layanan',
+                    'Problem'
+                ]
+            };
+            var myDoughnutChart_2 = new Chart(ctx_2, {
+                type: 'doughnut',
+                data: data_2,
+                options: {
+                    responsive: false,
+                    maintainAspectRatio: false,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            boxWidth: 12
+                        }
+                    }
+                }
+            });
+        });
+    
+
