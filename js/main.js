@@ -118,61 +118,61 @@ async function main(){
 		return rend;
 	}
 
-        $(function () {
-            var ctx = document.getElementById("grafico2").getContext('2d');
-            var data = {
-                datasets: [{
-                    data: [perVit(), 100-perVit()],
-                    backgroundColor: [
-                        '#3c8dbc',
-                        '#f56954',
-                        '#f39c12',
-                    ],
-                    
-                }],
-                labels: [
-                    'Vittorie',
-                    'Perse'
-                ]
-            };
-            var myDoughnutChart = new Chart(ctx, {
-                type: 'doughnut',
-                data: data,
-                options: {
-                    responsive: false,
-                    maintainAspectRatio: false,
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            boxWidth: 12
-                        }
-                    }
-                }
-            });
-            var ctx_2 = new Chart(document.getElementById("grafico"), {
-  type: 'line',
-  data: {
-    labels: lunghezzavar(),
-    datasets: [{ 
-        data: rendimento(),
-        label: "Pengwin",
-		pointRadius: 10,
-        borderColor: "#00FF00",
-        fill: true
-      }
-    ]
-  },
-
-  options: {
-    title: {
-      display: true,
-      text: 'Statistiche Comparate:',
-      fontSize: 20,
-		fontColor: "black"
-    }
-  }
-});
-        });
+  //       $(function () {
+//             var ctx = document.getElementById("grafico2").getContext('2d');
+//             var data = {
+//                 datasets: [{
+//                     data: [perVit(), 100-perVit()],
+//                     backgroundColor: [
+//                         '#3c8dbc',
+//                         '#f56954',
+//                         '#f39c12',
+//                     ],
+//                     
+//                 }],
+//                 labels: [
+//                     'Vittorie',
+//                     'Perse'
+//                 ]
+//             };
+//             var myDoughnutChart = new Chart(ctx, {
+//                 type: 'doughnut',
+//                 data: data,
+//                 options: {
+//                     responsive: false,
+//                     maintainAspectRatio: false,
+//                     legend: {
+//                         position: 'bottom',
+//                         labels: {
+//                             boxWidth: 12
+//                         }
+//                     }
+//                 }
+//             });
+//             var ctx_2 = new Chart(document.getElementById("grafico"), {
+//   type: 'line',
+//   data: {
+//     labels: lunghezzavar(),
+//     datasets: [{ 
+//         data: rendimento(),
+//         label: "Pengwin",
+// 		pointRadius: 10,
+//         borderColor: "#00FF00",
+//         fill: true
+//       }
+//     ]
+//   },
+// 
+//   options: {
+//     title: {
+//       display: true,
+//       text: 'Statistiche Comparate:',
+//       fontSize: 20,
+// 		fontColor: "black"
+//     }
+//   }
+// });
+//         });
     
 
 	log();
